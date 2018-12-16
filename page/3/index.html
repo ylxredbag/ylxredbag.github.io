@@ -155,103 +155,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-966D-Aztec-Catacombs-构造" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/03/966D-Aztec-Catacombs-构造/">966D. Aztec Catacombs[构造]</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/03/966D-Aztec-Catacombs-构造/" class="archive-article-date">
-  	<time datetime="2018-05-03T07:35:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Indiana Jones found ancient Aztec catacombs containing a golden idol. The catacombs consists of n caves. Each pair of caves is connected with a two-way corridor that can be opened or closed. The entrance to the catacombs is in the cave 1, the idol and the exit are in the cave n.</p>
-<p>When Indiana goes from a cave x to a cave y using an open corridor, all corridors connected to the cave x change their state: all open corridors become closed, all closed corridors become open. Indiana wants to go from cave 1 to cave n going through as small number of corridors as possible. Help him find the optimal path, or determine that it is impossible to get out of catacombs.</p>
-        
-          <a class="article-more-a" href="/2018/05/03/966D-Aztec-Catacombs-构造/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">构造</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">最短路</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/CF//" class="article-tag-list-link color3">CF</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/03/966D-Aztec-Catacombs-构造/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-P2808-小笼包-dp" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -1637,6 +1540,100 @@
 
 
   
+    <article id="post-P3218-HNOI2011-赛车游戏【-14】" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/31/P3218-HNOI2011-赛车游戏【-14】/">P3218 [HNOI2011]赛车游戏【-14】</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/31/P3218-HNOI2011-赛车游戏【-14】/" class="archive-article-date">
+  	<time datetime="2018-03-31T13:32:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>名歌手LAALA最近迷上了一款赛车游戏，游戏中开车的玩家在不同的路段需要选择不同的速度，使得自己在最短的时间内到达终点。开始游戏时，车内的初始油量为f，所以游戏的关键是如何在速度和耗油量之间实现平衡。</p>
+<p>LAALA 经过一段时间的研究后，发现这款游戏可以用一个简单的数学模型来描述，具体来说：从起点到终点的路线可以被简化成折线段，每条线段代表一个上坡或者下坡，若在一段斜率为 s(s&gt;0 代表上坡，s=0 代表平地，s&lt;0 代表下坡)的道路上以速度 v km/h 行驶，则每公里的耗油量为 max(0,av+bs)，其中 a 和 b 为游戏的内置参数，分别表示在平地行驶时的耗油率及斜坡对耗油量的影响(b 恒为正)。这里假设，加速和减速不耗油，且看成是瞬间完成的，所以即使在同一条线段上也可采取以不同的速度行驶的策略来缩短耗费的时间。</p>
+<p>由于 LAALA 在以前的游戏中表现不佳，现在使用的车型依然是系统初始分配的，所以它的速度不能超过 vmax km/h。在获得这些参数后，LAALA 想知道在初始油量受限的情况下（中途不许加油）自己能得到的最佳成绩是多少。作为 LAALA 的歌迷，你能帮帮他吗?</p>
+        
+          <a class="article-more-a" href="/2018/03/31/P3218-HNOI2011-赛车游戏【-14】/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">二分</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/各省省选//" class="article-tag-list-link color5">各省省选</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/31/P3218-HNOI2011-赛车游戏【-14】/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
@@ -2193,6 +2190,10 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
+              <a href="https://blog.csdn.net/hanyuweining" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>hanyuweining&#39;s blog</a>
+            </li>
+          
+            <li class="search-li">
               <a href="http://absi2011.is-programmer.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>absi2011&#39;s blog</a>
             </li>
           
@@ -2310,6 +2311,14 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://acxblog.site/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>ACX&#39;s blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://gongchen618.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>GC &#39;s blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://hk-cnyali.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>HK &#39;s blog</a>
             </li>
           
             <li class="search-li">
